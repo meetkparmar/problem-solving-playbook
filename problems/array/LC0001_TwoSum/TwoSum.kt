@@ -33,10 +33,10 @@
  *   - Only one valid answer exists.
  *   Follow-up: Can you come up with an algorithm that is less than `O(n^2)` time complexity?
  */
-class Solution {
+class TwoSumSolution {
 
-    // Time: O(?)
-    // Space: O(?)
+    // Time: O(n)
+    // Space: O(n)
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val map = mutableMapOf<Int, Int>()
 
@@ -50,7 +50,7 @@ class Solution {
 }
 
 fun main() {
-    val solution = Solution()
+    val solution = TwoSumSolution()
 
     val testCases = listOf(
         Pair(intArrayOf(2, 7, 11, 15), 9),
