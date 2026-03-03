@@ -30,8 +30,8 @@
  */
 class ContainerDuplicateSolution {
 
-    // Time: O(?)
-    // Space: O(?)
+    // Time: O(n)
+    // Space: O(n)
     fun containsDuplicate(nums: IntArray): Boolean {
         val set = HashSet<Int>()
 
