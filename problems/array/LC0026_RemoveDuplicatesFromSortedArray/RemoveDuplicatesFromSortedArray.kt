@@ -50,8 +50,8 @@
  */
 class RemoveDuplicatesFromSortedArraySolution {
 
-    // Time: O(?)
-    // Space: O(?)
+    // Time: O(n)
+    // Space: O(n)
     fun removeDuplicates(nums: IntArray): Int {
         val set = mutableSetOf<Int>()
         var i = 0

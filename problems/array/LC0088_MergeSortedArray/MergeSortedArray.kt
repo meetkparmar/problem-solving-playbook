@@ -45,8 +45,8 @@
  */
 class MergeSortedArraySolution {
 
-    // Time: O(?)
-    // Space: O(?)
+    // Time: O(m+n)
+    // Space: O(1)
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArray {
         var i = m - 1
         var j = n - 1

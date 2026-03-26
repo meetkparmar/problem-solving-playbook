@@ -30,8 +30,8 @@
  */
 class SearchInsertPositionSolution {
 
-    // Time: O(?)
-    // Space: O(?)
+    // Time: O(log(n))
+    // Space: O(1)
     fun searchInsert(nums: IntArray, target: Int): Int {
         var left = 0
         var right = nums.size-1
