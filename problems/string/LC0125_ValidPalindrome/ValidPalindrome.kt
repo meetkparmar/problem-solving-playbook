@@ -33,8 +33,8 @@
  */
 class ValidPalindromeSolution {
 
-    // Time: O(?)
-    // Space: O(?)
+    // Time: O(n)
+    // Space: O(1)
     fun isPalindrome(s: String): Boolean {
         var left = 0
         var right = s.length-1
