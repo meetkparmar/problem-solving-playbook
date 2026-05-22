@@ -27,23 +27,16 @@ class ValidAnagramSolution {
     // Space: O(n)
     fun isAnagram(s: String, t: String): Boolean {
         if(s.length != t.length) return false
-        var map = mutableMapOf<Char, Int>()
+        val list = IntArray(26)
 
-        s.forEach {
-            map[it] = map.getOrDefault(it, 0).plus(1)
+        val n = s.length-1
+
+        for(i in 0..n) {
+            list[s[i] - 'a']++
+            list[t[i] - 'a']--
         }
 
-        t.forEach {
-            if(map.contains(it)) {
-                map[it] = map.getOrDefault(it, 0).minus(1)
-            } else {
-                return false
-            }
-
-            if(map[it]!! <= 0) map.remove(it)
-        }
-
-        return map.isEmpty()
+        return list.all { it == 0 }
     }
 }
 
